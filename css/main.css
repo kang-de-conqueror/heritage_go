@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+.img--logo {
+	width:100px;
+	height:auto;	
+	text-align:left;
+	vertical-align:auto;
+	float:left;
+}
+
+header {
+	height:80px;
+	width:100%;
+	background-color:white;
+	color:#262626;	
+}
+
+.sp1 {
+	float:left;
+}
+
+.d2 {
+	margin-left:30%;
+	width:600px;
+	float:left;
+}
+
+.area {
+	float:left;
+	margin-left:56%;
+}
+
+.sp3 {
+	margin-left:20%;
+	float:left;
+}
+
+.p--primary {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:0%;
+}
+
+.p--second {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	margin-top:0%;
+}
+
+.button--login {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:40%;
+	font-size:14px;
+	text-align:center;
+	border-radius:3px;
+	border-color:#e6e6e6;	
+}
+
+.fa-compass {
+	margin-left:1%;
+	margin-top:3.5%;
+	text-align:center;	
+}
