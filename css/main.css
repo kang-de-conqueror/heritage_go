@@ -11,17 +11,20 @@
 header {
 	height:80px;
 	width:100%;
-	background-color:white;
 	color:#262626;	
 }
 
-.sp1 {
+.d1 {
+	background-color:#30C;
+	width:30%;
+	height:100%;
 	float:left;
 }
 
 .d2 {
-	margin-left:30%;
+	background-color:#009;
 	width:600px;
+	height:100%;
 	float:left;
 }
 
@@ -30,8 +33,10 @@ header {
 	margin-left:56%;
 }
 
-.sp3 {
-	margin-left:20%;
+.d3 {
+	width:30%;
+	height:100%;
+	background-color:#036;
 	float:left;
 }
 
@@ -53,7 +58,8 @@ header {
 
 .button--login {
 	font-family:Arial, Helvetica, sans-serif;
-	margin-top:40%;
+	margin-top:5%;
+	margin-left:70%;
 	font-size:14px;
 	text-align:center;
 	border-radius:3px;
