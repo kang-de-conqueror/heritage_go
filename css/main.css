@@ -80,7 +80,7 @@ body {
 
 .fa-compass {
 	text-align:center;
-	margin-left:15%;
+	margin:6px;
 	margin-top:50%;
     -webkit-animation: spin-compass 2s infinite linear;
 	
