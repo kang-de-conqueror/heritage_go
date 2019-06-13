@@ -54,7 +54,14 @@ body {
 .img-logo {
 	width:100px;
 	height:auto;
-	margin-top:10%;	
+	margin-top:8%;
+	transition: 0.1s ease-out;
+}
+
+.img-logo:hover {
+	transform:scale(1, 1.1);
+	transform-origin:center;
+	transition: 0.1s ease-out;
 }
 
 .primary-text {
