@@ -24,7 +24,7 @@ body {
 }
 
 .header-item1 {
-  width: 600px;
+  flex-basis: 600px;
   display: flex;
   justify-content: space-between;
   background-color: #fafafa;
@@ -41,7 +41,7 @@ body {
 }
 
 .header-item2 {
-  width: 30%;
+  flex-basis: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
