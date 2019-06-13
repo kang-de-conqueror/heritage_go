@@ -79,12 +79,26 @@ body {
 }
 
 .fa-compass {
-	width:24px;
-	height:24px;
 	text-align:center;
-	margin:6px;
 	margin-left:15%;
-	margin-top:65%;
+	margin-top:50%;
+    -webkit-animation: spin-compass 2s infinite linear;
+	
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin-compass {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
 .button-login {
