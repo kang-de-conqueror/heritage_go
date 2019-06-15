@@ -40,17 +40,6 @@ body {
   padding-top: 3%;
 }
 
-.header-item2 {
-  flex-basis: 30%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.item2-login {
-  margin-right: 10%;
-}
-
 .img-logo {
   width: 100px;
   height: auto;
@@ -117,6 +106,17 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.header-item2 {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item2-login {
+  margin-right: 10%;
 }
 
 .btn-login {
