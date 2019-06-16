@@ -51,12 +51,16 @@
 						</div>
 						<!-- Modal body -->
 						<div class="modal-body">
-							<div class="inp inp-email">
-								<input type="email" placeholder="Email address"/>
+							<div class="inp inp-email" id="float_email">
+								<label for="email">Email address</label>
+								<input type="email" placeholder="Email address" id="myEmail" name="email" />
 							</div>
-							<div class="inp inp-password">
-								<input type="password" placeholder="Password"id="myPassword"/>
-								<i class="fas fa-lock" onclick="seePassword()" id="seePassword"></i>
+							<div class="inp inp-password" id="float_password">
+								<label for="password">Password</label>
+								<div class="password-lock">
+									<input type="password" placeholder="Password" id="myPassword" name="password" />
+									<i class="fas fa-lock" onclick="seePassword()" id="seePassword"></i>
+								</div>
 							</div>
 						</div>
 						<div class="item2-submit">
@@ -81,6 +85,18 @@
 				y.className = "fas fa-lock";
 			}
 		}
+		const floatEmail = document.getElementById('myEmail');
+		const floatPassword = document.getElementById('myPassword');
+		const float_email = document.getElementById('float_email');
+		const float_password = document.getElementById('float_password');
+		floatEmail.addEventListener('focus', () => {
+			float_email.classList.add('active');
+			floatEmail.placeholder = "";
+		});
+		floatPassword.addEventListener('focus', () => {
+			float_password.classList.add('active');
+			floatPassword.placeholder = "";
+		});
 	</script>
 </body>
 

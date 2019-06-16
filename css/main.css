@@ -136,9 +136,25 @@ input {
   margin-top: 20px;
   margin-bottom: 15px;
   border-bottom: solid 1px rgb(68, 111, 192);
+  position: relative;
 }
 
-.inp-password {
+.inp.active label {
+  opacity: 1;
+  transition-duration: 0.3s;
+  transform: translate(0, -20px) scale(0.9);
+}
+
+label {
+  position: absolute;
+  color:rgb(7, 139, 184);
+  opacity: 0;
+  transform-origin: top left;
+  transform: translate(0, -16px) scale(1);
+  transition: all 0.1s ease-in-out;
+}
+
+.password-lock {
   display: flex;
   justify-content: space-between;
 }
