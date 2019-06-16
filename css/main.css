@@ -2,14 +2,14 @@
 /* CSS Document */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #262626;
+  color: #262626 !important;
 }
 
 .intro-header {
   width: 100%;
   height: 80px;
   background-color: white;
-  color: #262626;
+  color: #262626 !important;
   border-bottom: solid 1px rgba(0, 0, 0, 0.0975);
   margin: 0 auto;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .area-text {
-  padding-top: 3%;
+  padding-top: 10%;
 }
 
 .img-logo {
@@ -60,6 +60,7 @@ body {
 }
 
 .text-primary {
+  color: #262626 !important;
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -67,6 +68,7 @@ body {
 }
 
 .text-second {
+  color: #262626 !important;
   font-size: 14px;
   text-align: center;
   font-weight: bold;
@@ -123,4 +125,40 @@ body {
   text-align: center;
   border-radius: 3px;
   border-color: #e6e6e6;
+}
+
+input {
+  width: 100%;
+  border: 0px;
+}
+
+.inp {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px rgb(68, 111, 192);
+}
+
+.inp-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.item2-submit {
+  text-align: center;
+  margin: 3%;
+  border-radius: 5px;
+  background-color: rgb(68, 111, 192);
+}
+
+.btn-submit {
+  width: 100%;
+  color: white;
+}
+
+*:focus {
+  outline: none;
 }

@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Héritage GO is the community for heritage lovers." />
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="./css/main.css" type="text/css" />
-		<link rel="icon" href="./assets/favicon-16x16.png" type="image/png" />
-		<link rel="icon" href="./assets/favicon-32x32.png" type="image/png" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
-		<link
-			rel="stylesheet"
-			href="./bootstrap/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-			/>
-		<script
-			src="./js/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-			></script>
-		<script
-			src="./bootstrap/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-			></script>
-		<title>Héritage GO</title>
-	</head>
-	<body>
-		<header class="intro-header">
-			<div class="item header-item1">
-				<div class="item1-logo">
-					<img src="./img/heritagego_logo_128x73.png" class="img-logo" />
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Héritage GO is the community for heritage lovers." />
+	<meta charset="utf-8" />
+	<link rel="icon" href="./assets/favicon-16x16.png" type="image/png" />
+	<link rel="icon" href="./assets/favicon-32x32.png" type="image/png" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/main.css" type="text/css" />
+	<title>Héritage GO</title>
+</head>
+
+<body>
+	<header class="intro-header">
+		<div class="item header-item1">
+			<div class="item1-logo">
+				<img src="./img/heritagego_logo_128x73.png" class="img-logo" />
+			</div>
+			<div class="item1-area">
+				<div class="area-text">
+					<p class="text-primary">Hồ Chí Minh</p>
+					<p class="text-second">Vietnam</p>
 				</div>
-				<div class="item1-area">
-					<div class="area-text">
-						<p class="text-primary">Hồ Chí Minh</p>
-						<p class="text-second">Vietnam</p>
-					</div>
-					<div class="area-compass">
-						<i class="far fa-compass fa-2x"></i>
-					</div>
+				<div class="area-compass">
+					<i class="far fa-compass fa-2x"></i>
 				</div>
 			</div>
-			<div class="item header-item2">
-				<div class="item2-login">
-					<button class="btn btn-login" type="button" data-toggle="modal" data-target="#LogInModal">
-						<span>Log In</span>
-					</button>
-				</div>
+		</div>
+		<div class="item header-item2">
+			<div class="item2-login">
+				<!-- Trigger the modal with a button -->
+				<button class="btn btn-login" type="button" data-toggle="modal" data-target="#myModal">
+					Log In
+				</button>
 			</div>
 			<!-- The Modal -->
-			<div class="modal" id="LogInModal">
-				<div>
-					
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Log in</h4>
+							<button type="button" class="btn btn-close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Modal body -->
+						<div class="modal-body">
+							<div class="inp inp-email">
+								<input type="email" placeholder="Email address"/>
+							</div>
+							<div class="inp inp-password">
+								<input type="password" placeholder="Password"id="myPassword"/>
+								<i class="fas fa-lock" onclick="seePassword()" id="seePassword"></i>
+							</div>
+						</div>
+						<div class="item2-submit">
+							<button type="button" class="btn btn-submit" data-dismiss="modal">Log in</button>
+						</div>
+					</div>
 				</div>
-
 			</div>
-		</header>
-		<script
-			src="./js/jquery-3.3.1.min.js"
-			integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
-			crossorigin="anonymous"></script>
-		<script src="js/heritagego-service.1.0.0.js"></script>
-	</body>
+		</div>
+	</header>
+	<script src="js/heritagego-service.1.0.0.js"></script>
+	<script>
+		function seePassword() {
+			var x = document.getElementById("myPassword");
+			var y = document.getElementById("seePassword")
+			if (x.type === "password") {
+				x.type = "text";
+				y.className = "fas fa-lock-open";
+			}
+			else {
+				x.type = "password";
+				y.className = "fas fa-lock";
+			}
+		}
+	</script>
+</body>
+
 </html>
