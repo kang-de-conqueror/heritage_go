@@ -74,7 +74,6 @@ body {
 }
 
 .fa-compass {
-  text-align: center;
   margin: 6px;
   margin-top: 50%;
   -webkit-animation: spin-compass 2s infinite linear;
