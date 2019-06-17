@@ -85,18 +85,33 @@
 				y.className = "fas fa-lock";
 			}
 		}
-		const floatEmail = document.getElementById('myEmail');
-		const floatPassword = document.getElementById('myPassword');
-		const float_email = document.getElementById('float_email');
-		const float_password = document.getElementById('float_password');
-		floatEmail.addEventListener('focus', () => {
-			float_email.classList.add('active');
-			floatEmail.placeholder = "";
-		});
-		floatPassword.addEventListener('focus', () => {
-			float_password.classList.add('active');
-			floatPassword.placeholder = "";
-		});
+
+		function floatingLabel() {
+			var floatEmail = document.getElementById('myEmail');
+			var floatPassword = document.getElementById('myPassword');
+			var float_email = document.getElementById('float_email');
+			var float_password = document.getElementById('float_password');
+			old_placeholder_email = floatEmail.placeholder;
+			old_placeholder_password = floatPassword.placeholder;
+			floatEmail.addEventListener('focus', () => {
+				float_email.classList.add('active');
+				floatEmail.placeholder = "";
+			});
+			floatEmail.addEventListener('blur', () => {
+				float_email.classList.remove('active');
+				floatEmail.placeholder = old_placeholder_email;
+			});
+			floatPassword.addEventListener('focus', () => {
+				float_password.classList.add('active');
+				floatPassword.placeholder = "";
+			});
+			floatPassword.addEventListener('blur', () => {
+				float_password.classList.remove('active');
+				floatPassword.placeholder = old_placeholder_password;
+			});
+		}
+
+		floatingLabel()
 	</script>
 </body>
 
