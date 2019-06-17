@@ -14,28 +14,27 @@
 	<script src="js/popper.min.js"></script>
 	<script src="bootstrap/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="./css/main.css" type="text/css" />
-	<script src="js/main.js" type="text/javascript"></script>
 	<title>Héritage GO</title>
 </head>
 
 <body>
-	<header>
-		<div class="item item1">
-			<div class="item1__logo">
-				<img src="./img/heritagego_logo_128x73.png" class="item1__logo item1__logo__img" />
+	<header class="intro-header">
+		<div class="item header-item1">
+			<div class="item1-logo">
+				<img src="./img/heritagego_logo_128x73.png" class="img-logo" />
 			</div>
-			<div class="item1__area">
-				<div class="item1__area item1__area__text">
-					<p class="item1__area__text item1__area__text__primary">Hồ Chí Minh</p>
-					<p class="item1__area__text item1__area__text__second">Vietnam</p>
+			<div class="item1-area">
+				<div class="area-text">
+					<p class="text-primary">Hồ Chí Minh</p>
+					<p class="text-second">Vietnam</p>
 				</div>
-				<div class="item1__area__compass">
+				<div class="area-compass">
 					<i class="far fa-compass fa-2x"></i>
 				</div>
 			</div>
 		</div>
-		<div class="item item2">
-			<div class="item2__login">
+		<div class="item header-item2">
+			<div class="item2-login">
 				<!-- Trigger the modal with a button -->
 				<button class="btn btn-login" type="button" data-toggle="modal" data-target="#myModal">
 					Log In
@@ -72,30 +71,8 @@
 			</div>
 		</div>
 	</header>
-	<div class="main-body">
-		<div class="feed-section">
-			<div class="header-feed-section">
-				<div class="avatar-feed-section">
-					<img src="img/avatar.png" alt="avatar" class="avatar" />
-				</div>
-				<div class="info-feed-section">
-					<div class="info-caption-icon">
-						<div class="info-caption">
-							<p class="caption">The main entrance to Lê Văn Duyệt mausoleum - Sài Gòn - 1965</p>
-						</div>
-						<div class="info-icon">
-							<i class="fas fa-language fa-2x"></i>
-						</div>
-					</div>
-					<div class="info-location-date"></div>
-				</div>
-			</div>
-			<div class="body-feed-section"></div>
-			<div class="footer-feed-section"></div>
-		</div>
-	</div>
 	<script src="js/heritagego-service.1.0.0.js"></script>
-	<script type="text/javascript">
+	<script>
 		function seePassword() {
 			var x = document.getElementById("myPassword");
 			var y = document.getElementById("seePassword")
