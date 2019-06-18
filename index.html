@@ -21,7 +21,7 @@
 	<header class="intro-header">
 		<div class="item header-item1">
 			<div class="item1-logo">
-				<img src="./img/heritagego_logo_128x73.png" class="img-logo" />
+				<img src="./img/heritagego_logo_128x73.png" alt="heritagego_logo" class="img-logo" />
 			</div>
 			<div class="item1-area">
 				<div class="area-text">
@@ -53,12 +53,13 @@
 						<div class="modal-body">
 							<div class="inp inp-email" id="float_email">
 								<label for="email">Email address</label>
-								<input type="email" placeholder="Email address" id="myEmail" name="email" />
+								<input type="email" placeholder="Email address" id="myEmail" name="email" required />
 							</div>
 							<div class="inp inp-password" id="float_password">
 								<label for="password">Password</label>
 								<div class="password-lock">
-									<input type="password" placeholder="Password" id="myPassword" name="password" />
+									<input type="password" placeholder="Password" id="myPassword" name="password"
+										required />
 									<i class="fas fa-lock" onclick="seePassword()" id="seePassword"></i>
 								</div>
 							</div>
@@ -80,7 +81,7 @@
 				<div class="info-feed-section">
 					<div class="info-caption-icon">
 						<div class="info-caption">
-							<p>The </p>
+							<p class="caption">The main entrance to Lê Văn Duyệt mausoleum - Sài Gòn - 1965</p>
 						</div>
 						<div class="info-icon">
 							<img src="img/translate_language.png" alt="translate_language" class="language">
@@ -88,16 +89,46 @@
 					</div>
 					<div class="info-location-year">
 						<div class="location">
-							<i class=""></i>
+							<i class="fas fa-map-marker-alt"></i>
+							<p>&nbsp;Sài Gòn, Việt Nam</p>
 						</div>
 						<div class="year">
-							<i class=""></i>
+							<i class="far fa-clock"></i>
+							<p>&nbsp;1965</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="body-feed-section"></div>
-			<div class="footer-feed-section"></div>
+			<div class="body-feed-section">
+				<img src="img/1.jpg" alt="Đà Lạt xưa" class="img-body-feed-section">
+			</div>
+			<div class="footer-feed-section">
+				<div class="list-icon">
+					<div class="heart-comment-rephotography">
+						<div class="heart">
+							<i class="fas fa-heart"></i>
+							<p>&nbsp;0</p>
+						</div>
+						<div class="comment">
+							<i class="fas fa-comment"></i>
+							<p>&nbsp;0</p>
+						</div>
+						<div class="rephotography">
+							<i class="fas fa-camera"></i>
+							<p>&nbsp;0</p>
+						</div>
+					</div>
+					<div class="bookmark">
+						<i class="fas fa-bookmark"></i>
+					</div>
+				</div>
+				<div class="write-comment">
+					<div class="box-comment">
+						<input type="text" class="inp-comment" placeholder="Write a comment" />
+						<i class="fab fa-telegram-plane"></i>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script src="js/heritagego-service.1.0.0.js"></script>
@@ -120,8 +151,6 @@
 			var floatPassword = document.getElementById('myPassword');
 			var float_email = document.getElementById('float_email');
 			var float_password = document.getElementById('float_password');
-			old_placeholder_email = floatEmail.placeholder;
-			old_placeholder_password = floatPassword.placeholder;
 			floatEmail.addEventListener('focus', () => {
 				float_email.classList.add('active');
 				floatEmail.placeholder = "";

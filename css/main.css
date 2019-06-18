@@ -3,6 +3,13 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #262626 !important;
+  box-sizing: border-box;
+}
+
+.fas,
+.far,
+.fab {
+  cursor: pointer;
 }
 
 .intro-header {
@@ -110,7 +117,7 @@ body {
 }
 
 .header-item2 {
-  flex-basis: 30%;
+  flex-basis: calc((100% - 600px) / 2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -147,7 +154,7 @@ input {
 
 label {
   position: absolute;
-  color:rgb(7, 139, 184);
+  color: rgb(7, 139, 184);
   opacity: 0;
   transform-origin: top left;
   transform: translate(0, -16px) scale(1);
@@ -177,4 +184,192 @@ label {
 
 *:focus {
   outline: none;
+}
+
+.main-body {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.feed-section {
+  flex-basis: 600px;
+  height: 600px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: solid 0.3px grey;
+}
+
+.header-feed-section {
+  width: 100%;
+  height: 15%;
+  display: flex;
+}
+
+.avatar-feed-section {
+  width: 15%;
+  height: 100%;
+}
+
+.avatar {
+  margin-top: 17%;
+  margin-left: 17%;
+  width: 65%;
+  height: auto;
+}
+
+.info-feed-section {
+  width: 85%;
+  height: 100%;
+}
+
+.info-caption-icon {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+
+.info-caption {
+  width: 90%;
+  height: 100%;
+}
+
+.caption {
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+.info-icon {
+  width: 10%;
+  height: 100%;
+}
+
+.language {
+  margin-left: 20%;
+  margin-top: 25%;
+  width: 40%;
+  height: auto;
+  animation: shake 0.4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  from {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+.info-location-year {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+.location,
+.year {
+  display: flex;
+}
+
+.year {
+  margin-left: 7%;
+}
+
+.fa-map-marker-alt {
+  margin-top: 3%;
+}
+
+.fa-clock {
+  margin-top: 8%;
+}
+
+.body-feed-section {
+  width: 100%;
+  height: 65%;
+}
+
+.img-body-feed-section {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-feed-section {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-icon {
+  width: 95%;
+  height: 35%;
+  padding-top: 2%;
+  padding-bottom: 6%;
+  display: flex;
+  border-bottom: solid 2px rgb(241, 241, 241);
+}
+
+.heart-comment-rephotography {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.heart,
+.comment,
+.rephotography {
+  display: flex;
+}
+
+.fa-heart,
+.fa-comment,
+.fa-camera {
+  margin-top: 13%;
+}
+
+.bookmark {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-bookmark {
+  margin-top: 1%;
+  margin-right: 3%;
+}
+
+.write-comment {
+  width: 95%;
+  height: 65%;
+}
+
+.box-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 65%;
+  border: solid 2px rgb(241, 241, 241);
+  border-radius: 20px;
+}
+
+.inp-comment {
+  width: 80%;
+  height: 90%;
+  margin-left: 4%;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+.fa-telegram-plane {
+  margin-right: 4%;
+  opacity: 0.3;
 }
