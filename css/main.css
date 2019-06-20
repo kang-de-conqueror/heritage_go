@@ -3,7 +3,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #262626 !important;
-  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  .feed-section {
+    width: 100% !important;
+  }
 }
 
 .fas,
@@ -19,28 +28,23 @@ body {
   color: #262626 !important;
   border-bottom: solid 1px rgba(0, 0, 0, 0.0975);
   margin: 0 auto;
+  position: fixed;
+  z-index: 9999;
 }
 
-.intro-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.item {
-  height: 100%;
+.modal {
+  margin-top: 100px;
 }
 
 .header-item1 {
-  flex-basis: 600px;
-  display: flex;
-  justify-content: space-between;
+  width: 600px;
+  height: 100%;
   background-color: #fafafa;
 }
 
 .item1-area {
   height: 100%;
   margin-right: 2%;
-  display: flex;
 }
 
 .area-text {
@@ -50,7 +54,6 @@ body {
 .img-logo {
   width: 100px;
   height: auto;
-  margin-top: 8%;
   transition: 0.1s ease-out;
 }
 
@@ -117,14 +120,10 @@ body {
 }
 
 .header-item2 {
-  flex-basis: calc((100% - 600px) / 2);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.item2-login {
-  margin-right: 10%;
+  width: calc((100% - 600px) / 2);
+  height: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
 }
 
 .btn-login {
@@ -161,11 +160,6 @@ label {
   transition: all 0.1s ease-in-out;
 }
 
-.password-lock {
-  display: flex;
-  justify-content: space-between;
-}
-
 .modal-title {
   font-weight: bold;
 }
@@ -188,46 +182,46 @@ label {
 
 .main-body {
   width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: center;
+  height: auto;
+  padding-top: 80px;
 }
 
 .feed-section {
-  flex-basis: 600px;
-  height: 600px;
-  background-color: #fafafa;
+  width: 600px;
+  height: auto;
   border-radius: 5px;
-  border: solid 0.3px grey;
+  border: solid 1px rgb(218, 218, 218);
+  margin-bottom: 20px;
 }
 
 .header-feed-section {
   width: 100%;
-  height: 15%;
-  display: flex;
+  height: 105px;
 }
 
 .avatar-feed-section {
-  width: 15%;
-  height: 100%;
+  width: 12%;
+  height: auto;
+}
+
+.box-avatar {
+  width: 70%;
 }
 
 .avatar {
-  margin-top: 17%;
-  margin-left: 17%;
-  width: 65%;
+  width: 100%;
   height: auto;
 }
 
 .info-feed-section {
-  width: 85%;
+  width: 88%;
   height: 100%;
 }
 
 .info-caption-icon {
   width: 100%;
-  height: 70%;
-  display: flex;
+  height: 60px;
+  margin-top: 2%;
 }
 
 .info-caption {
@@ -237,7 +231,6 @@ label {
 
 .caption {
   font-weight: bold;
-  margin-top: 2%;
 }
 
 .info-icon {
@@ -246,11 +239,9 @@ label {
 }
 
 .language {
-  margin-left: 20%;
-  margin-top: 25%;
   width: 40%;
   height: auto;
-  animation: shake 0.4s;
+  animation: shake 0.35s;
   animation-iteration-count: infinite;
 }
 
@@ -268,108 +259,58 @@ label {
 
 .info-location-year {
   width: 100%;
-  height: 30%;
-  display: flex;
-}
-
-.location,
-.year {
-  display: flex;
-}
-
-.year {
-  margin-left: 7%;
-}
-
-.fa-map-marker-alt {
-  margin-top: 3%;
-}
-
-.fa-clock {
-  margin-top: 8%;
-}
-
-.body-feed-section {
-  width: 100%;
-  height: 65%;
+  height: 60%;
 }
 
 .img-body-feed-section {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .footer-feed-section {
   width: 100%;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 125px;
 }
 
 .list-icon {
-  width: 95%;
-  height: 35%;
-  padding-top: 2%;
-  padding-bottom: 6%;
-  display: flex;
-  border-bottom: solid 2px rgb(241, 241, 241);
+  margin-top: 2%;
+  border-bottom: solid 1px rgb(218, 218, 218);
 }
 
 .heart-comment-rephotography {
   width: 40%;
-  display: flex;
-  justify-content: space-around;
 }
 
-.heart,
-.comment,
-.rephotography {
-  display: flex;
+.bookmark {
+  width: 60%;
 }
 
 .fa-heart,
 .fa-comment,
 .fa-camera {
-  margin-top: 13%;
-}
-
-.bookmark {
-  width: 60%;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 15%;
 }
 
 .fa-bookmark {
-  margin-top: 1%;
+  margin-top: 1.4%;
   margin-right: 3%;
 }
 
-.write-comment {
-  width: 95%;
-  height: 65%;
-}
-
 .box-comment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2%;
   width: 100%;
-  height: 65%;
-  border: solid 2px rgb(241, 241, 241);
+  height: 45px;
+  border: solid 1px rgb(218, 218, 218);
   border-radius: 20px;
 }
 
 .inp-comment {
   width: 80%;
-  height: 90%;
-  margin-left: 4%;
-  background-color: #fafafa;
+  height: 80%;
   font-size: 14px;
 }
 
-.fa-telegram-plane {
-  margin-right: 4%;
-  opacity: 0.3;
+.list-icon,
+.write-comment {
+  width: 95%;
+  margin-bottom: 2.5%;
 }

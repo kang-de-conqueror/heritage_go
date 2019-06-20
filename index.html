@@ -18,12 +18,12 @@
 </head>
 
 <body>
-	<header class="intro-header">
-		<div class="item header-item1">
+	<header class="d-flex justify-content-end intro-header">
+		<div class="d-flex justify-content-between align-items-center header-item1">
 			<div class="item1-logo">
 				<img src="./img/heritagego_logo_128x73.png" alt="heritagego_logo" class="img-logo" />
 			</div>
-			<div class="item1-area">
+			<div class="d-flex item1-area">
 				<div class="area-text">
 					<p class="text-primary">Hồ Chí Minh</p>
 					<p class="text-second">Vietnam</p>
@@ -33,53 +33,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="item header-item2">
-			<div class="item2-login">
-				<!-- Trigger the modal with a button -->
-				<button class="btn btn-login" type="button" data-toggle="modal" data-target="#myModal">
-					Log In
-				</button>
-			</div>
-			<!-- The Modal -->
-			<div class="modal" id="myModal">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<!-- Modal Header -->
-						<div class="modal-header">
-							<h4 class="modal-title">Log in</h4>
-							<button type="button" class="btn btn-close" data-dismiss="modal">&times;</button>
-						</div>
-						<!-- Modal body -->
-						<div class="modal-body">
-							<div class="inp inp-email" id="float_email">
-								<label for="email">Email address</label>
-								<input type="email" placeholder="Email address" id="myEmail" name="email" required />
-							</div>
-							<div class="inp inp-password" id="float_password">
-								<label for="password">Password</label>
-								<div class="password-lock">
-									<input type="password" placeholder="Password" id="myPassword" name="password"
-										required />
-									<i class="fas fa-lock" onclick="seePassword()" id="seePassword"></i>
-								</div>
-							</div>
-						</div>
-						<div class="item2-submit">
-							<button type="button" class="btn btn-submit" data-dismiss="modal">Log in</button>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="d-flex justify-content-end align-items-center header-item2">
+			<!-- Trigger the modal with a button -->
+			<button class="btn btn-login" type="button" data-toggle="modal" data-target="#myModal">
+				Log In
+			</button>
 		</div>
 	</header>
-	<div class="main-body">
-		<div class="feed-section">
-			<div class="header-feed-section">
-				<div class="avatar-feed-section">
-					<img src="img/avatar.jpg" alt="avatar" class="avatar">
+	<main class="d-flex flex-column align-items-center main-body">
+		<div class="d-flex flex-column feed-section">
+			<div class="d-flex header-feed-section">
+				<div class="d-flex justify-content-center align-items-center avatar-feed-section">
+					<div class="box-avatar">
+						<img src="./img/avatar.jpg" alt="avatar" class="avatar">
+					</div>
 				</div>
 				<div class="info-feed-section">
-					<div class="info-caption-icon">
+					<div class="d-flex info-caption-icon">
 						<div class="info-caption">
 							<p class="caption">The main entrance to Lê Văn Duyệt mausoleum - Sài Gòn - 1965</p>
 						</div>
@@ -87,13 +57,13 @@
 							<img src="img/translate_language.png" alt="translate_language" class="language">
 						</div>
 					</div>
-					<div class="info-location-year">
-						<div class="location">
-							<i class="fas fa-map-marker-alt"></i>
+					<div class="d-flex info-location-year">
+						<div class="d-flex location">
+							<i class="fas fa-map-marker-alt" style="margin-top: 2%;"></i>
 							<p>&nbsp;Sài Gòn, Việt Nam</p>
 						</div>
-						<div class="year">
-							<i class="far fa-clock"></i>
+						<div class="d-flex year" style="margin-left: 4%;">
+							<i class="far fa-clock" style="margin-top: 8%;"></i>
 							<p>&nbsp;1965</p>
 						</div>
 					</div>
@@ -102,31 +72,180 @@
 			<div class="body-feed-section">
 				<img src="img/1.jpg" alt="Đà Lạt xưa" class="img-body-feed-section">
 			</div>
-			<div class="footer-feed-section">
-				<div class="list-icon">
-					<div class="heart-comment-rephotography">
-						<div class="heart">
+			<div class="d-flex flex-column justify-content-center align-items-center footer-feed-section">
+				<div class="d-flex list-icon">
+					<div class="d-flex justify-content-around heart-comment-rephotography">
+						<div class="d-flex heart">
 							<i class="fas fa-heart"></i>
 							<p>&nbsp;0</p>
 						</div>
-						<div class="comment">
+						<div class="d-flex comment">
 							<i class="fas fa-comment"></i>
 							<p>&nbsp;0</p>
 						</div>
-						<div class="rephotography">
+						<div class="d-flex rephotography">
 							<i class="fas fa-camera"></i>
 							<p>&nbsp;0</p>
 						</div>
 					</div>
-					<div class="bookmark">
+					<div class="d-flex justify-content-end bookmark">
 						<i class="fas fa-bookmark"></i>
 					</div>
 				</div>
 				<div class="write-comment">
-					<div class="box-comment">
+					<div class="d-flex justify-content-around align-items-center box-comment">
 						<input type="text" class="inp-comment" placeholder="Write a comment" />
-						<i class="fab fa-telegram-plane"></i>
+						<i class="fab fa-telegram-plane" style="opacity: 0.3;"></i>
 					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column feed-section">
+			<div class="d-flex header-feed-section">
+				<div class="d-flex justify-content-center align-items-center avatar-feed-section">
+					<div class="box-avatar">
+						<img src="./img/avatar.jpg" alt="avatar" class="avatar">
+					</div>
+				</div>
+				<div class="info-feed-section">
+					<div class="d-flex info-caption-icon">
+						<div class="info-caption">
+							<p class="caption">The main entrance to Lê Văn Duyệt mausoleum - Sài Gòn - 1965</p>
+						</div>
+						<div class="info-icon">
+							<img src="img/translate_language.png" alt="translate_language" class="language">
+						</div>
+					</div>
+					<div class="d-flex info-location-year">
+						<div class="d-flex location">
+							<i class="fas fa-map-marker-alt" style="margin-top: 2%;"></i>
+							<p>&nbsp;Sài Gòn, Việt Nam</p>
+						</div>
+						<div class="d-flex year" style="margin-left: 4%;">
+							<i class="far fa-clock" style="margin-top: 8%;"></i>
+							<p>&nbsp;1965</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="body-feed-section">
+				<img src="img/2.jpg" alt="Đà Lạt xưa" class="img-body-feed-section">
+			</div>
+			<div class="d-flex flex-column justify-content-center align-items-center footer-feed-section">
+				<div class="d-flex list-icon">
+					<div class="d-flex justify-content-around heart-comment-rephotography">
+						<div class="d-flex heart">
+							<i class="fas fa-heart"></i>
+							<p>&nbsp;0</p>
+						</div>
+						<div class="d-flex comment">
+							<i class="fas fa-comment"></i>
+							<p>&nbsp;0</p>
+						</div>
+						<div class="d-flex rephotography">
+							<i class="fas fa-camera"></i>
+							<p>&nbsp;0</p>
+						</div>
+					</div>
+					<div class="d-flex justify-content-end bookmark">
+						<i class="fas fa-bookmark"></i>
+					</div>
+				</div>
+				<div class="write-comment">
+					<div class="d-flex justify-content-around align-items-center box-comment">
+						<input type="text" class="inp-comment" placeholder="Write a comment" />
+						<i class="fab fa-telegram-plane" style="opacity: 0.3;"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column feed-section">
+			<div class="d-flex header-feed-section">
+				<div class="d-flex justify-content-center align-items-center avatar-feed-section">
+					<div class="box-avatar">
+						<img src="./img/avatar.jpg" alt="avatar" class="avatar">
+					</div>
+				</div>
+				<div class="info-feed-section">
+					<div class="d-flex info-caption-icon">
+						<div class="info-caption">
+							<p class="caption">The main entrance to Lê Văn Duyệt mausoleum - Sài Gòn - 1965</p>
+						</div>
+						<div class="info-icon">
+							<img src="img/translate_language.png" alt="translate_language" class="language">
+						</div>
+					</div>
+					<div class="d-flex info-location-year">
+						<div class="d-flex location">
+							<i class="fas fa-map-marker-alt" style="margin-top: 2%;"></i>
+							<p>&nbsp;Sài Gòn, Việt Nam</p>
+						</div>
+						<div class="d-flex year" style="margin-left: 4%;">
+							<i class="far fa-clock" style="margin-top: 8%;"></i>
+							<p>&nbsp;1965</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="body-feed-section">
+				<img src="img/3.jpg" alt="Đà Lạt xưa" class="img-body-feed-section">
+			</div>
+			<div class="d-flex flex-column justify-content-center align-items-center footer-feed-section">
+				<div class="d-flex list-icon">
+					<div class="d-flex justify-content-around heart-comment-rephotography">
+						<div class="d-flex heart">
+							<i class="fas fa-heart"></i>
+							<p>&nbsp;0</p>
+						</div>
+						<div class="d-flex comment">
+							<i class="fas fa-comment"></i>
+							<p>&nbsp;0</p>
+						</div>
+						<div class="d-flex rephotography">
+							<i class="fas fa-camera"></i>
+							<p>&nbsp;0</p>
+						</div>
+					</div>
+					<div class="d-flex justify-content-end bookmark">
+						<i class="fas fa-bookmark"></i>
+					</div>
+				</div>
+				<div class="write-comment">
+					<div class="d-flex justify-content-around align-items-center box-comment">
+						<input type="text" class="inp-comment" placeholder="Write a comment" />
+						<i class="fab fa-telegram-plane" style="opacity: 0.3;"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- The Modal -->
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Log in</h4>
+					<button type="button" class="btn btn-close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div class="inp inp-email" id="float_email">
+						<label for="email">Email address</label>
+						<input type="email" placeholder="Email address" id="myEmail" name="email" required />
+					</div>
+					<div class="inp inp-password" id="float_password">
+						<label for="password">Password</label>
+						<div class="d-flex justify-content-between password-lock">
+							<input type="password" placeholder="Password" id="myPassword" name="password" required />
+							<i class="fas fa-lock" onclick="seePassword()" id="seePassword"></i>
+						</div>
+					</div>
+				</div>
+				<div class="item2-submit">
+					<button type="button" class="btn btn-submit" data-dismiss="modal">Log in</button>
 				</div>
 			</div>
 		</div>
