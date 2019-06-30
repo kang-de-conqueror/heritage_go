@@ -1,5 +1,5 @@
 let isLoading = false;
-
+let ignored = -1;
 // See/ Unsee password
 function seePassword() {
     var x = document.getElementById("myPassword");
@@ -46,11 +46,12 @@ function render_photo(image, photoPost, mainContent) {
 }
 
 // Render full photos
-function render_photos(ignored) {
-    let main = $('main')
+function render_photos() {
+    let main = $('main');
+    ignored += 1
     mHeritageGoService
         .getPhotos({
-            limit: 4,
+            limit: 1,
             offset: ignored
         })
         .then(photos => {
@@ -86,12 +87,16 @@ $(function () {
         'filter': 'blur(.2em)',
         'background': '#fafafa',
     });
-    render_photos(4);
-    
+    for (var i = 0; i < 4; i++) {
+        render_photos();
+    }
+
     // On scroll
     $(window).scroll(function () {
         if ($(window).scrollTop() >= $(document).height() - $(window).height() - 1) {
-            render_photos(4);
+            for (var i = 0; i < 4; i++) {
+                render_photos();
+            }
         }
     })
 });
