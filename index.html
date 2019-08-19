@@ -136,9 +136,11 @@
 	<script>
 		function floatingLabel() {
 			var floatEmail = document.getElementById('myEmail');
-			var floatPassword = document.getElementById('myPassword');
 			var float_email = document.getElementById('float_email');
+			var old_placeholder_email = document.getElementById('myEmail').placeholder;
+			var floatPassword = document.getElementById('myPassword');
 			var float_password = document.getElementById('float_password');
+			var old_placeholder_password = document.getElementById('myPassword').placeholder;
 			floatEmail.addEventListener('focus', () => {
 				float_email.classList.add('active');
 				floatEmail.placeholder = "";
