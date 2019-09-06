@@ -17,7 +17,7 @@
 ## Technology:
     * HTML
     * CSS, Bootstrap
-    * JS, jQuerry, DOM
+    * JS, jQuery, DOM
 
 ## Project team :
     * NGUYEN THANH LUAN
